@@ -1,0 +1,21 @@
+$mainclr: rgba(255, 255, 255, 1);
+
+.container {
+  margin: 15px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .title {
+    color: $mainclr;
+    margin: 0 0 10px 0;
+  }
+
+  .errorcontainer {
+    margin: 10px 0 0 0;
+    .error {
+      color: $mainclr;
+    }
+  }
+}

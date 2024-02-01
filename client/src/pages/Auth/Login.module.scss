@@ -1,0 +1,91 @@
+$backgroundclr: rgba(51, 51, 51, 1);
+$formclr: rgb(37, 33, 33);
+$textclr: rgba(255, 255, 255, 1);
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $backgroundclr;
+
+  .formcontainer {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: $formclr;
+    border-radius: 10px;
+
+    .formtitle {
+      margin: 35px;
+      
+      .title {
+        font-size: 25px;
+        color: $textclr;
+      }
+    }
+
+    .formmain {
+      display: flex;
+      flex-direction: column;
+
+      .usernamecontainer, .passwordcontainer {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0 10px 25px;
+
+        .usernametitle, .passwordtitle {
+          margin: 0 0 10px 5px;
+          color: $textclr;
+          font-size: 18px;
+        }
+
+        .usernameinp, .passwordinp {
+          border: solid 1px $textclr;
+          padding: 7px;
+          border-radius: 5px;
+          outline: none;
+          background: none;
+          color: $textclr;
+
+        }
+      }
+    }
+
+    .loginbtncontainer {
+      width: 350px;
+      display: flex;
+      justify-content: center;
+
+      .loginbtn {
+        cursor: pointer;
+        margin: 10px 0 0 0;
+        width: 100px;
+        height: 25px;
+        outline: none;
+        border: solid 1px $textclr;
+        border-radius: 7px;
+        background: none;
+        color: white;
+        transition: 0.3s;
+
+        &:hover {
+          border: solid 1px $backgroundclr;
+          background-color: white;
+          color: $backgroundclr;
+          transition: 0.3s;
+        }
+      }
+    }
+
+    .errorcontainer {
+      margin: 10px 0 0 0;
+      .err {
+        color: $textclr;
+      }
+    }
+  }
+}

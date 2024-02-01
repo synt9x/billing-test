@@ -1,0 +1,17 @@
+$backgroundclr: rgba(51, 51, 51, 1);
+$textclr: rgba(255, 255, 255, 1);
+$tableborderclr: rgba(34, 34, 34, 1);
+
+.cellcontainer {
+
+  .tablecont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid 3px $tableborderclr;
+    .anyinfous {
+      font-size: 25px;
+      color: $textclr;
+    }
+  }
+}

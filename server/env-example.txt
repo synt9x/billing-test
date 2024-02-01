@@ -1,0 +1,5 @@
+DB_USER=db_user_username
+DB_PASSWORD=db_user_password
+DB_NAME=db_name
+PORT=server_port
+SECRET_KEY_SESSION=...
